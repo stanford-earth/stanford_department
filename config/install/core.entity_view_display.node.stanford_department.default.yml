@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.stanford_department.field_s_dept_component
+    - node.type.stanford_department
+  module:
+    - entity_reference_revisions
+    - user
+id: node.stanford_department.default
+targetEntityType: node
+bundle: department
+mode: default
+content:
+  field_s_dept_component:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

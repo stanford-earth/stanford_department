@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.stanford_department
+  module:
+    - node
+id: node.stanford_department
+targetEntityType: node
+bundle: department
+types:
+  - ''
+fieldMappings: {  }

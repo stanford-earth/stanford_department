@@ -1,0 +1,22 @@
+name: 'Stanford Department'
+type: module
+description: 'Provides Department content type and related configuration.'
+core: 8.x
+package: Stanford
+version: 8.x-1.0-dev
+dependencies:
+  - allowed_formats
+  - ds
+  - entity_reference_revisions
+  - field
+  - field_formatter_class
+  - layout_discovery
+  - menu_ui
+  - node
+  - paragraphs
+  - path
+  - rdf
+  - scheduler
+  - 'system (>= 8.3.x)'
+  - text
+  - user
