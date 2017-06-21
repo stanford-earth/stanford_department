@@ -9,7 +9,7 @@ dependencies:
 id: node.stanford_department.field_s_dept_component
 field_name: field_s_dept_component
 entity_type: node
-bundle: department
+bundle: stanford_department
 label: Component
 description: ''
 required: true

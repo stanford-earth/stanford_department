@@ -7,7 +7,7 @@ dependencies:
     - node
 id: node.stanford_department
 targetEntityType: node
-bundle: department
+bundle: stanford_department
 types:
   - ''
 fieldMappings: {  }

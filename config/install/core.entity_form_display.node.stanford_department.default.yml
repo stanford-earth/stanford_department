@@ -10,7 +10,7 @@ dependencies:
     - scheduler
 id: node.stanford_department.default
 targetEntityType: node
-bundle: department
+bundle: stanford_department
 mode: default
 content:
   created:
