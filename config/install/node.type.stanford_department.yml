@@ -20,7 +20,7 @@ third_party_settings:
     unpublish_enable: true
     unpublish_required: false
     unpublish_revision: true
-name: 'Department'
+name: Department
 type: stanford_department
 description: 'Department Page.'
 help: ''

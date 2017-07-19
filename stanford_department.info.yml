@@ -13,10 +13,12 @@ dependencies:
   - layout_discovery
   - menu_ui
   - node
+  - panelizer
   - paragraphs
   - path
   - rdf
   - scheduler
+  - stanford_paragraph_hero_banner
   - 'system (>= 8.3.x)'
   - text
   - user
