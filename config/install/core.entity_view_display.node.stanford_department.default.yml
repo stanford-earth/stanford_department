@@ -60,7 +60,7 @@ third_party_settings:
               label: hidden
               type: entity_reference_revisions_entity_view
               settings:
-                view_mode: default
+                view_mode: alternative_1
               third_party_settings: {  }
               weight: 0
             region: header
