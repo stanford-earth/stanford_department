@@ -42,10 +42,11 @@ third_party_settings:
             label: 'Main navigation'
             provider: menu_block
             label_display: '0'
-            level: 4
+            level: 2
             depth: 1
-            expand: 1
+            expand: 0
             parent: 'main:'
+            follow: 1
             suggestion: main
             region: first
             weight: 0
