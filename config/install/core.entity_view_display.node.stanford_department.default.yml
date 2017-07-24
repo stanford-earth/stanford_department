@@ -2,16 +2,116 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.stanford_department.field_s_department_hero_banner
     - field.field.node.stanford_department.field_s_dept_component
     - node.type.stanford_department
   module:
     - entity_reference_revisions
+    - panelizer
     - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          34d2dc94-bce3-448e-a291-5aa8ceaf21d7:
+            id: 'entity_field:node:field_s_dept_component'
+            label: Component
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: entity_reference_revisions_entity_view
+              settings:
+                view_mode: default
+                link: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            region: second
+            weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 34d2dc94-bce3-448e-a291-5aa8ceaf21d7
+          7b60db90-2fb8-45df-a1e1-82012e614227:
+            id: 'menu_block:main'
+            label: 'Main navigation'
+            provider: menu_block
+            label_display: '0'
+            level: 2
+            depth: 1
+            expand: 0
+            parent: 'main:'
+            follow: 1
+            suggestion: main
+            region: first
+            weight: 0
+            uuid: 7b60db90-2fb8-45df-a1e1-82012e614227
+            context_mapping: {  }
+          6dc7f334-4538-40ae-9b47-e730acdd09ad:
+            id: 'entity_field:node:field_s_department_hero_banner'
+            label: 'Hero Banner'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: entity_reference_revisions_entity_view
+              settings:
+                view_mode: alternative_1
+              third_party_settings: {  }
+              weight: 0
+            region: header
+            weight: 0
+            uuid: 6dc7f334-4538-40ae-9b47-e730acdd09ad
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          396b4f06-caa3-4c3c-9c32-90acf450afe9:
+            id: 'entity_field:node:title'
+            label: Title
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: string
+              settings:
+                link_to_entity: true
+              third_party_settings: {  }
+              weight: 0
+            region: first
+            weight: -1
+            uuid: 396b4f06-caa3-4c3c-9c32-90acf450afe9
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        label: Default
+        uuid: 26c5510b-1ca4-402d-8c98-24ecdf2f85fa
+        weight: 0
+        layout: aiur
+        layout_settings: {  }
+        page_title: ''
+        storage_type: panelizer_default
+        storage_id: 'node:stanford_department:default:default'
+        builder: standard
+        pattern: panelizer
+        static_context: {  }
 id: node.stanford_department.default
 targetEntityType: node
 bundle: stanford_department
 mode: default
 content:
+  field_s_department_hero_banner:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_s_dept_component:
     type: entity_reference_revisions_entity_view
     weight: 0
